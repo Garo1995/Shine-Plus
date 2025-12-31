@@ -166,7 +166,7 @@ header .btn{
         width: 100%;
         position: fixed;
         z-index: 99999;
-        top: 15px;
+        top: 0;
         left: 0;
         transition: 0.5s;
         height: 0;
@@ -180,7 +180,7 @@ header .btn{
         transition: all 0.5s ease 0s;
     }
     .menu-mobile{
-        padding: 12px 10px;
+        padding: 13px 10px 12px;
         flex-direction: column;
         position: relative;
         width: 100%;

@@ -129,7 +129,10 @@ let talkSwiper = new Swiper(".talk-about-slider", {
 
 (function () {
     const modal = document.getElementById("saleModal");
+    if (!modal) return;
+
     const closeBtn = modal.querySelector(".sale-modal__close");
+    if (!closeBtn) return;
 
     setTimeout(() => {
         modal.classList.add("is-open");
