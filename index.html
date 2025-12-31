@@ -32,7 +32,7 @@
                             <li><a href="#">Реферальная программа</a></li>
                         </ul>
                     </div>
-                    <button class="btn">Записаться</button>
+                    <a href="#contact" class="yak-scroll btn">Записаться</a>
                 </div>
             </div>
             <div class="open-menu">
@@ -53,10 +53,11 @@
                 </h1>
                 <p>Отполируем ваше устройство пока вы пьете кофе!
                    <br> Вернем состояние нового телефона, <span>без разбора устройства!</span></p>
-                <button class="btn">Получить консультацию</button>
+                <a href="#contact" class="yak-scroll btn">Получить консультацию</a>
+
             </div>
             <div class="scratches-iphone G-flex">
-                <img src="./assets/img/iphone.png" alt="iphone">
+                <img src="./assets/img/iphone.webp" alt="iphone">
             </div>
         </div>
 
@@ -84,7 +85,7 @@
 
 </section>
 
-<section class="section-margin">
+<section class="section-margin animate-on-scroll">
     <div class="container">
         <div class="polishing-flex G-align-end G-justify-between">
             <div class="polishing-info">
@@ -117,16 +118,16 @@
                 </div>
             </div>
             <div class="polishing-photo G-flex">
-                <img src="./assets/img/polishing.png" alt="polishing">
+                <img src="./assets/img/polishing.webp" alt="polishing">
             </div>
         </div>
         <div class="G-center">
-            <button class="btn">Записаться</button>
+            <a href="#contact" class="yak-scroll btn">Записаться</a>
         </div>
     </div>
 </section>
 
-<section class="section-margin">
+<section class="section-margin animate-on-scroll">
     <div class="container">
         <h2>Преимущества</h2>
         <div class="advantages-flex G-align-center G-justify-between">
@@ -172,7 +173,7 @@
     </div>
 </section>
 
-<section class="section-margin">
+<section class="section-margin animate-on-scroll">
     <div class="container">
         <div class="referral-program">
             <div class="referral-title G-align-center">
@@ -187,12 +188,12 @@
             </ul>
             <h4>И это ещё не всё!</h4>
             <p>Если ты приведёшь 20+ клиентов, твой бонус увеличится до 15% от стоимости каждого заказа!</p>
-            <button class="btn-white">Заработать с Блеск Плюс</button>
+            <a href="#contact" class="yak-scroll btn-white">Заработать с Блеск Плюс</a>
         </div>
     </div>
 </section>
 
-<section class="section-margin">
+<section class="section-margin animate-on-scroll">
     <div class="container">
         <div class="our-works-title G-align-center G-justify-between">
             <h2>Наши работы</h2>
@@ -206,22 +207,22 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="our-works-photo G-flex">
-                            <img src="./assets/img/watches-1.png" alt="watches">
+                            <img src="./assets/img/watches-1.webp" alt="watches">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="our-works-photo G-flex">
-                            <img src="./assets/img/watches-2.png" alt="watches">
+                            <img src="./assets/img/watches-2.webp" alt="watches">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="our-works-photo G-flex">
-                            <img src="./assets/img/watches-1.png" alt="watches">
+                            <img src="./assets/img/watches-1.webp" alt="watches">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="our-works-photo G-flex">
-                            <img src="./assets/img/watches-2.png" alt="watches">
+                            <img src="./assets/img/watches-2.webp" alt="watches">
                         </div>
                     </div>
                 </div>
@@ -232,7 +233,7 @@
     </div>
 </section>
 
-<section class="section-margin">
+<section class="section-margin animate-on-scroll" >
     <div class="container">
         <div class="our-works-title G-align-center G-justify-between">
             <h2>О нас говорят</h2>
@@ -286,7 +287,7 @@
 </section>
 
 
-<section class="section-margin">
+<section id="contact" class="section-margin animate-on-scroll">
     <div class="container">
         <div class="shine-flex G-align-center G-justify-between">
             <div class="shine-photo G-flex">
@@ -371,6 +372,30 @@
         </div>
     </div>
 </footer>
+
+
+
+
+
+
+
+
+<div class="sale-modal" id="saleModal" aria-hidden="true">
+    <div class="sale-modal__overlay"></div>
+
+    <div class="sale-modal__box" role="dialog" aria-modal="true" aria-labelledby="saleTitle">
+        <button class="sale-modal__close" type="button" aria-label="Закрыть">
+            <span></span>
+            <span></span>
+        </button>
+        <h1 id="saleTitle">Скидка 40%</h1>
+        <p>Скидка 40% на полировку Apple Watch до конца Декабря</p>
+        <button class="btn-white" type="button">За подарками от Блеск Плюс</button>
+    </div>
+</div>
+
+
+
 
 <script src="assets/js/jquery-3.6.4.js"></script>
 <script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>

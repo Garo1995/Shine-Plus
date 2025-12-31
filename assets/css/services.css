@@ -37,6 +37,9 @@
     transition: 0.3s;
     cursor: pointer;
 }
+.catalog-menu ul li:hover{
+    border: 1px solid rgba(0, 99, 186, 1);
+}
 .catalog-menu ul li.catalog-menu-act{
     border: 1px solid rgba(0, 99, 186, 1);
 }
@@ -203,10 +206,12 @@
     padding-left: 20px;
     position: relative;
     align-items: center;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 20px;
     line-height: 120%;
     color: rgba(0, 0, 0, 1);
+    font-family: 'Inter';
+
 }
 .work-going-title ul li:before{
     content: "";
@@ -265,6 +270,221 @@
     width: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-map{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 455px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.contact-flex{
+    padding: 20px 32px;
+    gap: 20px;
+}
+.contact-box{
+    background: rgba(0, 99, 186, 0.1);
+    max-width: 310px;
+    width: 100%;
+    padding: 30px 16px;
+    gap: 10px;
+    border-radius: 17px;
+    min-height: 165px;
+    justify-content: center;
+}
+.contact-box h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+}
+.contact-box a{
+    color: rgba(0, 99, 186, 1);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+}
+.contact-box ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.contact-box ul li{
+    display: flex;
+}
+.contact-box ul li a{
+    width: 32px;
+    height: 32px;
+}
+.contact-box h3{
+    font-size: 26px;
+    text-align: center;
+
+}
+.contact-box span{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: rgba(0, 99, 186, 1);
+    margin-top: 13px;
+
+}
+.contact-box .btn {
+    font-family: "Jura";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 13px;
+    justify-content: center;
+    padding: 7px 21px;
+    border-radius: 5px;
+    max-width: 206px;
+    height: 40px;
+}
+.contact-box:nth-child(2){
+    max-width: 476px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.error-page{
+    padding: 190px 0 0;
+    margin-bottom: 100px;
+}
+.error-page-flex .promotion-fon{
+    max-width: 596px;
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.error-page-flex{
+    gap: 60px;
+}
+
+.error-page .btn-white {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.battle-polish-wrap{
+    margin-top: 70px;
+    padding: 20px;
+    gap: 24px 30px;
+}
+.battle-polish-box{
+    align-items: center;
+    border-radius: 28px;
+    border: 1px solid rgba(229, 239, 248, 1);
+    background: #ffffff;
+    width: calc(33.333333vw - 89px);
+    overflow: hidden;
+}
+.battle-polish-box img{
+    max-width: 276px;
+    width: 100%;
+}
+.battle-polish-name{
+    width: 100%;
+    padding: 20px;
+}
+.battle-polish-name h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+}
+.battle-polish-name span{
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: rgba(0, 99, 186, 1);
+}
+.battle-polish-name .btn{
+    font-family: 'Jura';
+
+    margin: 22px auto 0;
+    padding: 8px 24px;
+    max-width: 236px;
+    height: 32px;
+    font-size: 14px;
+
+}
+
+
+
+
+
+.replacement-cnt{
+    margin-top: 80px;
+    gap: 30px;
+}
+
+.replacement-cnt img{
+    width: 100%;
+}
+
+.replacement-cnt p{
+    font-size: 20px;
+
+}
+
+
+
+
+
 @media (max-width: 1199px){
     .catalog-services {
         margin-top: 135px;
@@ -305,8 +525,35 @@
         max-width: 410px;
     }
 
-
-
+    .contact-flex {
+        padding: 20px 0 0;
+        gap: 16px;
+    }
+    .contact-box {
+        max-width: 280px;
+        padding: 20px 16px;
+        min-height: 144px;
+    }
+    .contact-map {
+        height: 391px;
+        border-radius: 14px;
+        margin-top: 38px;
+    }
+    .error-page-flex {
+        gap: 30px;
+    }
+    .battle-polish-wrap {
+        margin-top: 60px;
+        padding: 0;
+        gap: 24px 20px;
+    }
+    .battle-polish-box {
+        width: calc(33.333333vw - 27px);
+    }
+    .replacement-cnt {
+        margin-top: 54px;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 1020px){
@@ -334,6 +581,49 @@
     }
     .screen-flex {
         gap: 20px;
+    }
+
+    .contact-flex {
+        padding: 20px 0 0;
+        gap: 16px;
+        flex-direction: column;
+    }
+    .contact-box h4 {
+        font-size: 16px;
+    }
+    .contact-box {
+        max-width: 480px;
+    }
+    .contact-box span {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .contact-box h3 {
+        font-size: 22px;
+    }
+    .error-page-flex {
+        gap: 40px;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .error-page {
+        padding: 120px 0 0;
+        margin-bottom: 80px;
+    }
+    .error-page-photo {
+        max-width: 254px;
+        width: 100%;
+    }
+    .battle-polish-box {
+        width: calc(50vw - 27px);
+    }
+    .replacement-cnt p {
+        font-size: 16px;
+    }
+    .replacement-cnt {
+        margin-top: 34px;
     }
 }
 @media (max-width: 767px){
@@ -378,6 +668,19 @@
     }
 
 }
+@media (max-width: 620px){
+    .battle-polish-wrap {
+        margin-top: 35px;
+        justify-content: center;
+    }
+    .battle-polish-box {
+        width: 100%;
+        max-width: 450px;
+    }
+    .battle-polish-name {
+        padding: 16px;
+    }
+}
 @media (max-width: 575px){
     .catalog-services {
         margin-top: 115px;
@@ -389,8 +692,8 @@
     .catalog-min p {
         max-width: 333px;
     }
-    .catalog-card {
-        width: 100%;
+    .catalog-name {
+        padding: 16px 11px 16px;
     }
     .catalog-card img {
         height: auto;
@@ -398,6 +701,9 @@
     .promotion-fon .btn-white {
         padding: 10px 18px;
         font-size: 16px;
+    }
+    .catalog-wrap {
+        gap: 24px 10px;
     }
     .promotion-fon {
         border-radius: 18px;
@@ -409,5 +715,29 @@
     .screen-info h2 {
         max-width: 300px;
         width: 100%;
+    }
+    .catalog-card {
+        border: 1px solid rgba(229, 239, 248, 1);
+    }
+    .catalog-card:hover {
+        border: 1px solid rgba(0, 99, 186, 1);
+    }
+    .catalog-card {
+        width: calc(50% - 5px);
+    }
+    .catalog-name h4 {
+        font-size: 16px;
+        min-height: 20px;
+    }
+    .catalog-scit {
+        width: 42px;
+        height: 20px;
+        font-size: 11px;
+    }
+    .catalog-card img {
+        border-radius: 21px 21px 0 0;
+    }
+    .work-going-title ul li {
+        font-size: 14px;
     }
 }

@@ -1,14 +1,4 @@
-@font-face {
-    font-family: 'Jura';
-    src: url('Jura-SemiBold.eot');
-    src: local('Jura SemiBold'), local('Jura-SemiBold'),
-    url('Jura-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('Jura-SemiBold.woff2') format('woff2'),
-    url('Jura-SemiBold.woff') format('woff'),
-    url('Jura-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
+
 
 @font-face {
     font-family: 'Jura';
@@ -19,18 +9,6 @@
     url('Jura-Regular.woff') format('woff'),
     url('Jura-Regular.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Jura';
-    src: url('Jura-Light.eot');
-    src: local('Jura Light'), local('Jura-Light'),
-    url('Jura-Light.eot?#iefix') format('embedded-opentype'),
-    url('Jura-Light.woff2') format('woff2'),
-    url('Jura-Light.woff') format('woff'),
-    url('Jura-Light.ttf') format('truetype');
-    font-weight: 300;
     font-style: normal;
 }
 
@@ -95,17 +73,7 @@
 
 
 
-@font-face {
-    font-family: 'Inter';
-    src: url('Inter-SemiBold.eot');
-    src: local('Inter Semi Bold'), local('Inter-SemiBold'),
-    url('Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('Inter-SemiBold.woff2') format('woff2'),
-    url('Inter-SemiBold.woff') format('woff'),
-    url('Inter-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
+
 
 @font-face {
     font-family: 'Inter';
@@ -128,21 +96,6 @@
     url('Inter-ExtraBold.woff') format('woff'),
     url('Inter-ExtraBold.ttf') format('truetype');
     font-weight: 800;
-    font-style: normal;
-}
-
-
-
-
-@font-face {
-    font-family: 'Inter';
-    src: url('Inter-Medium.eot');
-    src: local('Inter Medium'), local('Inter-Medium'),
-    url('Inter-Medium.eot?#iefix') format('embedded-opentype'),
-    url('Inter-Medium.woff2') format('woff2'),
-    url('Inter-Medium.woff') format('woff'),
-    url('Inter-Medium.ttf') format('truetype');
-    font-weight: 500;
     font-style: normal;
 }
 

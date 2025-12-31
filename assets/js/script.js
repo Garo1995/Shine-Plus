@@ -24,6 +24,40 @@ $(".mask-phone").mask("+7 (h99) 999-99-99");
 
 
 
+
+
+
+
+
+$(document).ready(function () {
+    setTimeout(function () {
+        $(".scratches-main").addClass("start-anime");
+        $("header").addClass("header-anime");
+    }, 800);
+});
+
+const revealOnScroll = () => {
+    const elementsToReveal = document.querySelectorAll('.animate-on-scroll');
+    const triggerPoint = window.innerHeight * 0.85;
+
+    elementsToReveal.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+
+        if (elementTop < triggerPoint) {
+            element.classList.add('visible');
+        }
+    });
+};
+
+// 🔄 Attach listeners
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+
+
+
+
+
 let worksSwiper = new Swiper(".our-works-slider", {
     slidesPerView: 2,
     spaceBetween: 15,
@@ -89,7 +123,31 @@ let talkSwiper = new Swiper(".talk-about-slider", {
 
 
 
-$('.menu-scroll a').click(function() {
+
+
+
+
+(function () {
+    const modal = document.getElementById("saleModal");
+    const closeBtn = modal.querySelector(".sale-modal__close");
+
+    setTimeout(() => {
+        modal.classList.add("is-open");
+        document.documentElement.classList.add("is-modal-open");
+    }, 30000);
+
+    closeBtn.addEventListener("click", () => {
+        modal.classList.remove("is-open");
+        document.documentElement.classList.remove("is-modal-open");
+    });
+})();
+
+
+
+
+
+
+$('.yak-scroll').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
         && location.hostname == this.hostname) {
         let $target = $(this.hash);
