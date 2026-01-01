@@ -56,10 +56,10 @@
         <div class="catalog-flex G-align-center G-justify-between">
             <div class="catalog-menu">
                 <ul>
-                    <li class="catalog-menu-act">Полировка</li>
-                    <li>Подготовка к продаже</li>
-                    <li>Чистка</li>
-                    <li>Защита</li>
+                    <li class="catalog-click catalog-active" data-catalog="polish">Полировка</li>
+                    <li class="catalog-click" data-catalog="sale">Подготовка к продаже</li>
+                    <li class="catalog-click" data-catalog="clean">Чистка</li>
+                    <li class="catalog-click" data-catalog="protect">Защита</li>
                 </ul>
             </div>
             <div class="form-search">
@@ -69,59 +69,164 @@
                 <button class="btn-search"><i class="icon-search"></i></button>
             </div>
         </div>
-
-        <div class="catalog-wrap G-flex-wrap">
-            <div class="catalog-card">
-                <img src="./assets/img/iphone-12.png" alt="iphone">
-                <div class="catalog-name">
-                    <div class="G-align-center G-justify-between">
-                        <h4>IPhone 12</h4>
-                    </div>
-                    <span>2990₽</span>
-                    <button class="btn">Подробнее</button>
-                </div>
-            </div>
-            <div class="catalog-card">
-                <img src="./assets/img/iphone-12.png" alt="iphone">
-                <div class="catalog-name">
-                    <div class="G-align-center G-justify-between">
-                        <h4>IPhone 12</h4> <div class="catalog-scit">Хит!</div>
-                    </div>
-                    <span>2990₽</span>
-                    <button class="btn">Подробнее</button>
-                </div>
-            </div>
-            <div class="catalog-card">
-                <img src="./assets/img/iphone-12.png" alt="iphone">
-                <div class="catalog-name">
-                    <div class="G-align-center G-justify-between">
-                        <h4>IPhone 12</h4>
-                    </div>
-                    <span>2990₽</span>
-                    <button class="btn">Подробнее</button>
-                </div>
-            </div>
-            <div class="catalog-card">
-                <img src="./assets/img/iphone-12.png" alt="iphone">
-                <div class="catalog-name">
-                    <div class="G-align-center G-justify-between">
-                        <h4>IPhone 12</h4>
-                    </div>
-                    <span>2990₽</span>
-                    <button class="btn">Подробнее</button>
-                </div>
-            </div>
-            <div class="catalog-card">
-                <img src="./assets/img/iphone-12.png" alt="iphone">
-                <div class="catalog-name">
-                    <div class="G-align-center G-justify-between">
-                        <h4>IPhone 12</h4>
-                    </div>
-                    <span>2990₽</span>
-                    <button class="btn">Подробнее</button>
-                </div>
-            </div>
-        </div>
+       <div class="catalog-content">
+           <div class="catalog-js" data-catalog="polish">
+               <div class="catalog-wrap G-flex-wrap">
+                   <div class="catalog-card" >
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+                   <div class="catalog-card" >
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4> <div class="catalog-scit">Хит!</div>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="catalog-js" data-catalog="sale">
+               <div class="catalog-wrap G-flex-wrap">
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4> <div class="catalog-scit">Хит!</div>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="catalog-js" data-catalog="clean">
+               <div class="catalog-wrap G-flex-wrap">
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4> <div class="catalog-scit">Хит!</div>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="catalog-js" data-catalog="protect">
+               <div class="catalog-wrap G-flex-wrap">
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+                   <div class="catalog-card">
+                       <img src="./assets/img/iphone-12.png" alt="iphone">
+                       <div class="catalog-name">
+                           <div class="G-align-center G-justify-between">
+                               <h4>IPhone 12</h4>
+                           </div>
+                           <span>2990₽</span>
+                           <button class="btn">Подробнее</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
     </div>
 </section>
 

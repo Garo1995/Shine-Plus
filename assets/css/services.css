@@ -40,7 +40,7 @@
 .catalog-menu ul li:hover{
     border: 1px solid rgba(0, 99, 186, 1);
 }
-.catalog-menu ul li.catalog-menu-act{
+.catalog-menu ul li.catalog-active{
     border: 1px solid rgba(0, 99, 186, 1);
 }
 
@@ -113,6 +113,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 100%;
+    min-height: 26px;
 }
 .catalog-name  span{
     display: block;

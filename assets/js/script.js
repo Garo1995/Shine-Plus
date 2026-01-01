@@ -169,3 +169,67 @@ $('.yak-scroll').click(function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+
+    addActiveClass('catalog-menu', 'catalog-active');
+    changeCaseBlock(this, 'catalog-menu', 'catalog-content', 'catalog-active', 'catalog-click');
+    $('.catalog-click').on('click', function () {
+        changeActiveClassWithClick(this, 'catalog-menu', 'catalog-active')
+        changeCaseBlock(this, 'catalog-menu', 'catalog-content', 'catalog-active', 'catalog-click');
+    })
+
+
+
+
+    function addActiveClass(parent_menu, active_class) {
+        let prt = $('.' + parent_menu);
+        let prt_childrens = $(prt).children();
+        let prt_child_li = $(prt_childrens).children();
+        let first_child = $(prt_child_li)[0]
+        if (!$(first_child).hasClass(active_class)) {
+            !$(first_child).addClass(active_class)
+        }
+    }
+    function changeActiveClassWithClick($this, parent_block, active_class) {
+        let prt = $($this).parents('.' + parent_block);
+        let prt_child = $(prt).find('li');
+        $(prt_child).each(function () {
+            $(this).removeClass(active_class);
+        })
+        $($this).addClass(active_class);
+    }
+    function changeCaseBlock($this, case_menu, case_block, active_class, menu_link) {
+        let case_menu_block = $('.' + case_menu);
+        let case_block_sub = $('.' + case_block);
+        let case_block_child = $(case_block_sub).children();
+        $(case_block_child).each(function () {
+            $(this).css({display: 'none', height: 0});
+        })
+        if ($($this).hasClass(menu_link)) {
+            let this_attr = $($this).attr('data-catalog');
+            $(case_block_child).each(function () {
+                if ($(this).attr('data-catalog') == this_attr) {
+                    $(this).css({display: 'block', height: '100%'});
+                }
+            })
+        } else {
+            let active_find = $(case_menu_block).find('.' + active_class);
+            let active_find_attr = $(active_find).attr('data-catalog');
+            $(case_block_child).each(function () {
+                if ($(this).attr('data-catalog') == active_find_attr) {
+                    $(this).css({display: 'block', height: '100%'});
+                }
+            })
+        }
+    }
+});

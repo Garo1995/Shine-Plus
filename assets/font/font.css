@@ -99,3 +99,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-LightBETA.eot');
+    src: local('Inter Light BETA'), local('Inter-LightBETA'),
+    url('Inter-LightBETA.eot?#iefix') format('embedded-opentype'),
+    url('Inter-LightBETA.woff2') format('woff2'),
+    url('Inter-LightBETA.woff') format('woff'),
+    url('Inter-LightBETA.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
