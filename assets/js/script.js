@@ -155,7 +155,7 @@ $('.yak-scroll').click(function() {
     setTimeout(() => {
         modal.classList.add("is-open");
         document.documentElement.classList.add("is-modal-open");
-    }, 1000);
+    }, 30000);
 
     closeBtn.addEventListener("click", () => {
         modal.classList.remove("is-open");
