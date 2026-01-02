@@ -667,7 +667,7 @@ footer .logo span{
     font-size: 18px;
 }
 
-.sale-modal__close{
+.modal-close{
     position:absolute;
     top: 28px;
     right: 28px;
@@ -677,7 +677,7 @@ footer .logo span{
     cursor: pointer;
     background: unset;
 }
-.sale-modal__close span{
+.modal-close span{
     position:absolute;
     left: 50%;
     top: 50%;
@@ -686,10 +686,10 @@ footer .logo span{
     background:#fff;
     transform-origin: center;
 }
-.sale-modal__close span:first-child{
+.modal-close span:first-child{
     transform: translate(-50%,-50%) rotate(45deg);
 }
-.sale-modal__close span:last-child{
+.modal-close span:last-child{
     transform: translate(-50%,-50%) rotate(-45deg);
 }
 
@@ -1059,7 +1059,7 @@ footer .logo span{
     .sale-modal__box p {
         font-size: 16px;
     }
-    .sale-modal__close {
+    .modal-close {
         top: 18px;
         right: 18px;
         width: 22px;
